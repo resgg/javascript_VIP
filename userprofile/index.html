@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userprofile</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="head">
+    <div class="content-head">
+        <div class="content">
+      <p>enter your name:</p>
+      <input type="text" id="name"/>
+      <p>enter your regno:</p>
+      <input type="text" id="regno"/>
+      <p>enter your dept:</p>
+      <input type="text" id="dept"/>
+   
+      <button id="submit" onclick="showAnswers();">Submit</button>
+  </div>
+    <p id="print1"></p>
+    <p id="print2"></p>
+    <p id="print3"></p>
+    <p id="print4"></p>
+</div>
+   </div>
+    
+   
+    <script>
+
+        function showAnswers(){
+        document.getElementById("print1").innerHTML=document.getElementById("name").value 
+        document.getElementById("print2").innerHTML= document.getElementById("regno").value 
+        document.getElementById("print3").innerHTML= document.getElementById("dept").value 
+       
+         
+        }
+       
+    </script>
+
+
+</body>
+</html>
